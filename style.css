@@ -16,10 +16,7 @@
 body{
     font-family: 'raleway', Arial, sans-serif;
     font-size: 1rem;
-    color: black
-}
-
-.bloc_page{
+    color: black;
     width: 80%;
     margin: auto;
 }
@@ -34,7 +31,47 @@ a{
 /* Header */
 /* ----------------------------------------------------------------- */
 
+header{
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+}
 
+.logo{
+    background-color:sandybrown;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.menu{
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4%;
+}
+
+nav a{
+    background-color: skyblue;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: #0065fc;
+
+}
+
+.signin{
+    font-weight: bold;
+    color: #0065fc;
+}
+
+.nav_hebergements{ /* on aurait pu mettre aussi ces attributs dans "nav a:hover" pour avoir l'affichage pour les Activités au survol de la souris */
+    border-top: 3px solid  #0065fc;
+    padding-top: 20%;
+}
 
 /* ----------------------------------------------------------------- */
 /* Main */
