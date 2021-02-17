@@ -41,7 +41,7 @@ header{
     background-color: none;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 1%;
 }
 
 .menu{
@@ -49,7 +49,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 2.8%;
 }
 
 nav a{
@@ -112,10 +112,6 @@ main{
     border: 1px solid #F2F2F2;
     height: 3em;
     font-weight: bold;
-}
-
-.input_search::placeholder{
-    color: black;
 }
 
 .input_btn
@@ -193,6 +189,73 @@ main{
 .result_nbr{
     margin-left: 1%;
 }
+
+
+/* ------ Hébergements ------ */
+.hebergements{
+    width: 880px;
+    height: 624px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 39px 0 39px;
+    background: #F2F2F2;
+    border-radius: 25px;
+}
+
+.cards_hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*margin-top: -50px;*/
+}
+
+.card_hebergement{ /*article hebergement*/
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 4px;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.img_hebergement{
+    width: 235px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.card_text h4{
+    margin: 5px 0 0 10px;
+}
+
+.card_text p{
+    margin: 4px 0 0 10px;
+}
+
+.card_star{
+    margin: 4px 0 5px 10px;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+
+.fa-star.grey{
+    color: #F2F2F2;
+}
+
+.plus{
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
 
 /* ----------------------------------------------------------------- */
 /* Footer */
