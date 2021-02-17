@@ -38,10 +38,10 @@ header{
 }
 
 .logo{
-    background-color:sandybrown;
+    background-color: none;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2%;
+    padding-top: 4%;
 }
 
 .menu{
@@ -53,7 +53,7 @@ header{
 }
 
 nav a{
-    background-color: skyblue;
+    background-color: none;
     margin-right: 30px;
     font-weight: 500;
 }
@@ -70,14 +70,129 @@ nav a:hover{
 
 .nav_hebergements{ /* on aurait pu mettre aussi ces attributs dans "nav a:hover" pour avoir l'affichage pour les Activités au survol de la souris */
     border-top: 3px solid  #0065fc;
-    padding-top: 20%;
+    padding-top: 16%;
+    color: #0065fc;
 }
 
 /* ----------------------------------------------------------------- */
 /* Main */
 /* ----------------------------------------------------------------- */
 
+main{
+    margin-top: 1%;
+}
+/* ------ Search ------ */
+.search{ /* titre */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
+.search p{
+    margin-top: -0.5%;
+    margin-bottom: 1%;
+}
+
+.search_form /* barre de recherche */
+{
+    display: flex;
+    align-items: center;
+   
+}
+
+.search_form i{
+   border: 10px solid #F2F2F2;
+   border-top-left-radius: 12px;
+   border-bottom-left-radius: 12px;
+   background: #F2F2F2;
+   padding: 2px 2px 2px 4px;
+}
+
+.input_search{
+    border: 1px solid #F2F2F2;
+    height: 3em;
+    font-weight: bold;
+}
+
+.input_search::placeholder{
+    color: black;
+}
+
+.input_btn
+{
+    cursor: pointer;
+    border: 10px solid #0065FC;
+    background: #0065FC;
+    color: #ffffff;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 3em;
+}
+
+.search_filter{ /* filtres */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter_title{
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+.filtres{
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    border-left: none;
+    margin-right: 2%;
+    height: 2.8em;
+    cursor: pointer;
+}
+
+.filtres:hover{
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+.filtres i{
+    color: #0065FC;
+    background: #DEEBFF;
+    border-radius: 100%;
+    height: 2.9rem;
+    width: 2.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_categorie
+{
+    padding-left: 22px;
+    font-weight: bold;
+}
+
+.search_result{ /* result */
+    display: flex;
+    align-items: center;
+}
+
+.search_result i{
+    color: #0065FC;
+    border-radius: 100%;
+    border : 2px solid #F2F2F2;
+    height: 1.4rem;
+    width: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_nbr{
+    margin-left: 1%;
+}
 
 /* ----------------------------------------------------------------- */
 /* Footer */
