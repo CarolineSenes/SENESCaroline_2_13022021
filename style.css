@@ -17,8 +17,11 @@ body{
     font-family: 'raleway', Arial, sans-serif;
     font-size: 1rem;
     color: black;
-    width: 80%;
+    width: 1340px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a{
@@ -32,35 +35,30 @@ a{
 /* ----------------------------------------------------------------- */
 
 header{
-    background-color: none;
     display: flex;
     justify-content: space-between;
 }
 
 .logo{
-    background-color: none;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 
 .menu{
-    background-color: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.8%;
+    padding-top: 3.2%;
 }
 
 nav a{
-    background-color: none;
     margin-right: 30px;
     font-weight: 500;
 }
 
 nav a:hover{
     color: #0065fc;
-
 }
 
 .signin{
@@ -79,25 +77,29 @@ nav a:hover{
 /* ----------------------------------------------------------------- */
 
 main{
-    margin-top: 1%;
+    margin-top: 1%; /*espace entre header et main*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 /* ------ Search ------ */
 .search{ /* titre */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .search p{
-    margin-top: -0.5%;
-    margin-bottom: 1%;
+    margin-top: 0;
+    margin-bottom: 2%;
 }
 
 .search_form /* barre de recherche */
 {
     display: flex;
     align-items: center;
-   
 }
 
 .search_form i{
@@ -137,12 +139,11 @@ main{
 }
 
 .filtres{
-    padding-right: 5%;
+    padding-right: 2%;
     display: flex;
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    border-left: none;
     margin-right: 2%;
     height: 2.8em;
     cursor: pointer;
@@ -193,13 +194,11 @@ main{
 
 /* ------ Hébergements ------ */
 .hebergements{
-    width: 880px;
-    height: 624px;
+    width: 67%;
+    height: auto;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-direction: column;
     margin-top: 30px;
-    padding: 0 39px 0 39px;
     background: #F2F2F2;
     border-radius: 25px;
 }
@@ -207,8 +206,8 @@ main{
 .cards_hebergements{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    /*margin-top: -50px;*/
+    justify-content: space-around;
+    width: 100%;
 }
 
 .card_hebergement{ /*article hebergement*/
@@ -256,6 +255,68 @@ main{
     cursor: pointer;
 }
 
+.hebergements h2, .plus{
+    padding-left: 3.5%;
+}
+
+/* ------ Les plus populaires ------ */
+.populaires{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background: #F2F2F2;
+    border-radius: 25px;
+    /*padding-left: 35px;*/
+    justify-content: space-around;
+    padding: 0 3% 0 3%;
+}
+
+.populaires_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding-right: %;*/
+}
+
+.card_populaire a{ /*article populaire*/
+    display: flex;
+    background-color: white;
+    padding: 4px;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.img_populaire{
+    width: 127px;
+    height: 134px;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+
+.description_populaire{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5% 0 5%;
+}
+
+.description_populaire h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.description_populaire p{
+    margin-top: 2%;
+}
+
+.stars_populaire{
+    display: flex;
+    align-items: flex-end;
+}
 
 /* ----------------------------------------------------------------- */
 /* Footer */
