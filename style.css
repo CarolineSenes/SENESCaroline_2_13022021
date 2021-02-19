@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'raleway';
-    src: url('police/Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('police/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('font/Raleway-VariableFont_wght.ttf') format('truetype'),
+         url('font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 
@@ -17,7 +17,6 @@ body{
     font-family: 'raleway', Arial, sans-serif;
     font-size: 1rem;
     color: black;
-    width: 1340px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -29,6 +28,10 @@ a{
     text-decoration: none;
 }
 
+header, main{
+    width: 1440px;
+    margin: auto;
+}
 
 /* ----------------------------------------------------------------- */
 /* Header */
@@ -268,7 +271,6 @@ main{
     margin-top: 30px;
     background: #F2F2F2;
     border-radius: 25px;
-    /*padding-left: 35px;*/
     justify-content: space-around;
     padding: 0 3% 0 3%;
 }
@@ -277,7 +279,6 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding-right: %;*/
 }
 
 .card_populaire a{ /*article populaire*/
@@ -316,8 +317,99 @@ main{
 .stars_populaire{
     display: flex;
     align-items: flex-end;
+    height: 45px;
+}
+
+
+/* ------ Activités ------ */
+.activites{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.cards_activites{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card_activite1, .card_activite2, .card_activite3, .card_activite4, .card_activite5, .card_activite6{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 300px
+}
+
+.img_activite_1, .img_activite_2, .img_activite_3, .img_activite_4, .img_activite_5, .img_activite_6{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.img_activite_1, .img_activite_4{
+    height: 390px;
+}
+
+.img_activite_2{
+    height: 180px;
+}
+
+.img_activite_3{
+    height: 107px;
+}
+
+.img_activite_5{
+    height: 138px;
+}
+
+.img_activite_6{
+    height: 152px;
+}
+
+.activites_colonne2, .activites_colonne4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards_activites h4{
+    margin-left: 5%;
+    font-weight: bolder;
 }
 
 /* ----------------------------------------------------------------- */
 /* Footer */
 /* ----------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 3% 0 3% 0;
+    margin-top: 4%;
+}
+
+footer div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3{
+    font-weight: bolder;
+}
+
+footer a{
+    margin-bottom: 3%;
+}
