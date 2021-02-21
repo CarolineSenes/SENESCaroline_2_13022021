@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=500, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/png" href="images/logo/Reservia@3x.png" />
         <script src="https://kit.fontawesome.com/93ea52f4d8.js" crossorigin="anonymous"></script>
@@ -10,20 +10,17 @@
     </head>
 
     <body>
-
         <!------------------------------------>
         <!-- HEADER -->
         <!------------------------------------>
 
         <header>
             <img src="images/logo/Reservia.svg" class="logo" alt="Reservia">
-            <div class="menu">
-                <nav>
-                        <a href="#bloc_hebergements" class="nav_hebergements">Hébergements</a>
-                        <a href="#bloc_activites" class="nav_activites">Activités</a>
-                </nav>
-                <a href="#" class="signin">S'inscrire</a>
-            </div> 
+            <nav>
+                <a href="#hebergements" class="nav_hebergements">Hébergements</a>
+                <a href="#activites" class="nav_activites">Activités</a>
+                <a href="#" class="nav_signin">S'inscrire</a>
+            </nav> 
         </header>        
 
         <!------------------------------------>
@@ -69,7 +66,7 @@
             </section>
 
             <!-- HEBERGEMENTS -->
-            <section class="hebergements">
+            <section id="hebergements">
                 <h2>Hébergements à Marseille</h2>
                 <div class="cards_hebergements">
                         <article class="card_hebergement">
@@ -148,8 +145,10 @@
                     <a href="#">
                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="img_populaire" alt="Hôtel le soleil du matin" />
                         <div class="description_populaire">   
-                            <h4>Hôtel le soleil du matin</h4>
-                            <p>Nuit à partir de 128€</p>
+                            <div class="description_populaire_texte">
+                                <h4>Hôtel le soleil du matin</h4>
+                                <p>Nuit à partir de 128€</p>
+                            </div>
                             <div class="stars_populaire"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </a>
@@ -157,9 +156,11 @@
                 <article class="card_populaire">
                     <a href="#">
                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img_populaire" alt="Au coeur de l'eau Chambre d'hôtes" />
-                        <div class="description_populaire">   
-                            <h4>Au coeur de l'eau Chambre d'hôtes</h4>
-                            <p>Nuit à partir de 71€</p>
+                        <div class="description_populaire">
+                            <div class="description_populaire_texte">   
+                                <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                                <p>Nuit à partir de 71€</p>
+                            </div>
                             <div class="stars_populaire"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
                         </div>
                     </a>
@@ -167,18 +168,20 @@
                 <article class="card_populaire">
                     <a href="#">
                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="img_populaire" alt="Hôtel tout bleu et Blanc" />
-                        <div class="description_populaire">   
-                            <h4>Hôtel tout bleu et Blanc</h4>
-                            <p>Nuit à partir de 68€</p>
-                            <div class="stars_populaire"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                        </div>
-                    </a>
+                        <div class="description_populaire">
+                                <div class="description_populaire_texte">   
+                                    <h4>Hôtel tout bleu et Blanc</h4>
+                                    <p>Nuit à partir de 68€</p>
+                                </div>
+                                <div class="stars_populaire"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        </div> 
+                       </a>
                 </article>
             </aside>
 
 
             <!-- ACTIVITES -->
-            <section class="activites">
+            <section id="activites">
                 <h2>Activités à Marseille</h2>
                 <div class="cards_activites">
                     <article class="card_activite1"> 
@@ -249,6 +252,6 @@
                 <a href="#">Nous contacter</a>
             </div>
             </section>
-        </footer>   
+        </footer> 
     </body>
 </html>
