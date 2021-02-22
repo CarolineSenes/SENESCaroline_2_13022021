@@ -54,21 +54,24 @@ nav a{
     align-items: flex-end;
     width: 40%;
     height: 70px;
+    box-sizing: border-box;
+
 }
 
 .nav_hebergements{
-    font-weight: 500;
     color: #0065fc;
     border-top: 3px solid  #0065fc;
 }
 
-.nav_activites, .nav_signin{
-    border-top: 3px solid transparent;
+.nav_activites:hover{
+    color: #0065fc;
+    border-top: 3px solid  #0065fc;
 }
 
 .nav_signin{
     font-weight: bold;
     color: #0065fc;
+    border-top: 3px solid transparent;
 }
 
 /* ----------------------------------------------------------------- */
