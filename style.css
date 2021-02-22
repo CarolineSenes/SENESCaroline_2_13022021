@@ -2,12 +2,43 @@
 /* Définition des polices personnalisées */
 /* ----------------------------------------------------------------- */
 
-@font-face {
+@font-face{
     font-family: 'raleway';
     src: url('font/Raleway-VariableFont_wght.ttf') format('truetype'),
          url('font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
+@media screen and (max-width: 1339px){
+    #hebergements_global{
+        flex-direction: column-reverse;
+    }
+
+    #cards_populaires{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card_populaire{
+        width: 32%;
+    }
+
+    #populaires{
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 977px){
+    #cards_populaires{
+        flex-direction: column;
+    }
+
+    .card_populaire{
+        width: 100%;
+    }
+
+
+
+}
 
 /* ----------------------------------------------------------------- */
 /* Eléments principaux de la page */
@@ -55,7 +86,6 @@ nav a{
     width: 40%;
     height: 70px;
     box-sizing: border-box;
-
 }
 
 .nav_hebergements{
@@ -193,9 +223,16 @@ main{
     margin-right: 1%;
 }
 
+/* ------ Hébergements global ------ */
+
+#hebergements_global{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* ------ Hébergements ------ */
 #hebergements{
-    width: 60%;
+    flex-basis: 60%;
     padding: 1% 2.8% 2.8% 2.8%;
     display: flex;
     flex-direction: column;
@@ -219,10 +256,11 @@ main{
     cursor: pointer;
     box-sizing: border-box;
     margin-bottom: 30px;
+    width: 32%;
 }
 
 .img_hebergement{
-    width: 235px;
+    width: 100%;
     height: 114px;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
@@ -255,8 +293,8 @@ main{
 }
 
 /* ------ Les plus populaires ------ */
-.populaires{
-    width: 25%;
+#populaires{
+    flex-basis: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -294,7 +332,7 @@ main{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 3% 0 0 5%;
+    padding: 3% 1% 0 5%;
 }
 
 .description_populaire_texte h4{
@@ -319,24 +357,22 @@ main{
 
 .cards_activites{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
 }
 
 .card_activite1, .card_activite2, .card_activite3, .card_activite4, .card_activite5, .card_activite6{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white;
     border-radius: 25px;
     box-shadow: 6px 6px 16px #0000002e;
     cursor: pointer;
     box-sizing: border-box;
-    width: 300px
 }
 
 .img_activite_1, .img_activite_2, .img_activite_3, .img_activite_4, .img_activite_5, .img_activite_6{
-    width: 300px;
+    width: 100%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
 }
@@ -365,6 +401,13 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 1%;
+}
+
+.card_activite1, .card_activite4{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
 }
 
 .cards_activites h4{
