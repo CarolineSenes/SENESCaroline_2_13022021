@@ -42,6 +42,23 @@
 }
 
 @media screen and (max-width: 665px){
+    .search_form{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .cards_activites{
+        flex-direction: column;
+    }
+
+    .cards_activites img{
+        height: 134px;
+    }
+
+    .card_activite2, .card_activite5{
+        margin-bottom: 8px;
+    }
+
     .footer_content{
         flex-direction: column;
     }
@@ -257,6 +274,7 @@ main{
     flex-basis: 60%;
     padding: 1% 2.8% 2.8% 2.8%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     background: #F2F2F2;
     border-radius: 25px;
@@ -286,6 +304,11 @@ main{
     height: 114px;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
 }
 
 .card_text h4{
@@ -428,8 +451,6 @@ main{
 }
 
 .card_activite1, .card_activite4{
-    display: flex;
-    flex-direction: column;
     margin: 1%;
 }
 
