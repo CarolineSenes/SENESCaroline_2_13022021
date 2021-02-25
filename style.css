@@ -1,22 +1,11 @@
 /* ----------------------------------------------------------------- */
-/* Définition des polices personnalisées */
-/* ----------------------------------------------------------------- */
-
-@font-face{
-    font-family: 'raleway';
-    src: url('font/Raleway-VariableFont_wght.ttf') format('truetype'),
-         url('font/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-}
-
-
-/* ----------------------------------------------------------------- */
 /* Eléments principaux de la page */
 /* ----------------------------------------------------------------- */
-
 body{
-    font-family: 'raleway', Arial, sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
     color: black;
     margin: auto;
+    font-size: 100%;
 }
 
 a{
@@ -29,6 +18,15 @@ header, main, .footer_content{
     margin: auto;
     padding-left: 1.8%;
     padding-right: 1.8%;
+}
+
+h1{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+h2, h3, h4{
+    font-weight: 700;
 }
 
 /* ----------------------------------------------------------------- */
@@ -102,7 +100,7 @@ main{
 }
 
 /* ------ Search ------ */
-.search{ /* titre */
+.search{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -153,7 +151,7 @@ main{
 }
 
 .filter_title{
-    font-weight: bold;
+    font-weight: 800;
     margin-right: 2%;
 }
 
@@ -186,7 +184,7 @@ main{
 
 .search_categorie{
     padding-left: 10px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .search_result{ /* result */
@@ -543,11 +541,45 @@ footer a{
     .footer_content div{
         width: 100%;
     }
-
-
     
 }
 
-@media screen and (max-width: 374px){
+@media screen and (max-width: 477px){
+    header, main, .footer_content{
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    .logo{
+        padding-left: 19px;
+    }
+
+    .nav_signin{
+        padding-right: 19px;
+    }
+
+    nav a{
+        height: 50px;
+    }
+
+    .search{
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    #populaires, #hebergements{
+        padding: 1% 19px 1% 19px;
+    }
+
+    #activites{
+        padding: 1% 15px 1% 15px; /*15px et non 19px comme le reste pour rattraper le padding de 4px des cards pop et hebgmt*/
+    }
+    
+    .cards_hebergements{
+        flex-direction: column;
+    }
+
+    .card_hebergement {
+        width: 100%;
+    }
 }
