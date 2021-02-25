@@ -360,7 +360,7 @@ main{
 }
 
 .card_activite1, .card_activite2, .card_activite3, .card_activite4, .card_activite5, .card_activite6{
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     background-color: white;
