@@ -520,23 +520,8 @@ footer a{
         background: none;
     }
 
-    .cards_hebergements{
-        flex-direction: column;
-    }
-
     .card_hebergement{
-        flex-direction: row;
-        width: 100%;
-        background-color:bisque;
-    }
-
-    .img_hebergement{
-        width: 38%;
-        border-radius: 25px 0 0 25px;
-    }
-
-    .card_text{
-        background-color: cadetblue;
+        width: 45%;
     }
 
     .cards_activites{
