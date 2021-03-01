@@ -281,6 +281,9 @@ main {
 
 .card_star {
   margin: 4px 0 5px 10px;
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 .fa-star {
@@ -354,6 +357,11 @@ main {
 
 .description_populaire_texte p {
   margin-top: 2%;
+}
+
+.stars_populaire{
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* ------ Activités ------ */
@@ -613,7 +621,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -15px;
+    margin-left: -20px;
   }
 
   .input_search {
