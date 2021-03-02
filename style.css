@@ -68,7 +68,7 @@ nav a {
 }
 
 #nav_signin {
-  font-weight: bold;
+  font-weight: 700;
   color: #0065fc;
   border-top: 3px solid transparent;
   height: 87px;
@@ -136,6 +136,7 @@ main {
   font-family: inherit;
   font-weight: 700;
   font-size: 100%;
+  outline: 0;
 }
 
 #input_btn {
@@ -295,7 +296,7 @@ main {
 }
 
 #plus {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.2em;
   cursor: pointer;
 }
@@ -429,7 +430,7 @@ main {
 
 #cards_activites h4 {
   margin-left: 5%;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 /* ----------------------------------------------------------------- */
@@ -455,7 +456,7 @@ footer div {
 }
 
 footer h3 {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 footer a {
