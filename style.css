@@ -85,6 +85,8 @@ nav a {
 
 #nav_activites {
   padding: 0 44px 0 44px;
+  border-top: 3px solid transparent;
+
 }
 
 #nav_activites:hover {
